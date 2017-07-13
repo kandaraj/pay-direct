@@ -1,3 +1,15 @@
-<p>
-  term works!
-</p>
+ 
+  <fieldset class="form-group">
+      <label>Is it long term or short term.</label>
+      <label class="radio-inline">
+          <input type="radio" name="term" id="optionsRadiosInline" value="short" checked="" (click)="saveTerm($event)" />Short
+      </label>
+      <label class="radio-inline">
+          <input type="radio" name="term" id="optionsRadiosInline" value="long" (click)="saveTerm($event)"/>Long
+      </label>
+
+      <a [routerLink]="['/location']" [routerLinkActive]="['router-link-active']" class="btn btn-primary btn-lg" role="button" >
+            Next
+        </a>
+  </fieldset>
+ 
