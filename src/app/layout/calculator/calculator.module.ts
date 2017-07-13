@@ -4,13 +4,16 @@ import { CalculatorComponent } from './calculator.component';
 import { CalculatorRoutingModule } from './calculator-routing.module';
 import { TermComponent } from './term/term.component';
 import { DataService } from '../../shared/services/data-service';
+import { LocationComponent } from './location/location.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
-    CalculatorRoutingModule
+    CalculatorRoutingModule,
+    FormsModule
   ],
-  declarations: [CalculatorComponent, TermComponent],
+  declarations: [CalculatorComponent, TermComponent, LocationComponent],
   providers: [DataService]
 })
 export class CalculatorModule { }

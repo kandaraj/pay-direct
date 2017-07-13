@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CalculatorComponent } from './calculator.component';
 import { TermComponent } from './term/term.component';
+import { LocationComponent } from './location/location.component';
 
 const routes: Routes = [
     { 
@@ -11,7 +12,11 @@ const routes: Routes = [
           path: '', component: TermComponent
         },
         { 
-          path: 'term', component: TermComponent }
+          path: 'term', component: TermComponent 
+        },
+        { 
+          path: 'location', component: LocationComponent 
+        }
       ]
     }
 ];
