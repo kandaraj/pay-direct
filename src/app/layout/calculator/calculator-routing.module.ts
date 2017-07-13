@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { CalculatorComponent } from './calculator.component';
 import { TermComponent } from './term/term.component';
 import { LocationComponent } from './location/location.component';
+import { IncomeComponent } from './income/income.component';
+import { ExpenseComponent } from './expense/expense.component';
 
 const routes: Routes = [
     { 
@@ -16,6 +18,12 @@ const routes: Routes = [
         },
         { 
           path: 'location', component: LocationComponent 
+        },
+        { 
+          path: 'income', component: IncomeComponent 
+        },
+        { 
+          path: 'expense', component: ExpenseComponent 
         }
       ]
     }
