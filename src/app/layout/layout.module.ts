@@ -7,6 +7,12 @@ import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
 import { HeaderComponent, SidebarComponent } from '../shared';
 
+import { DataService } from '../shared/services/data-service';
+
+import { 
+    NotificationComponent
+} from './dashboard/components';
+
 @NgModule({
     imports: [
         CommonModule,
@@ -17,7 +23,9 @@ import { HeaderComponent, SidebarComponent } from '../shared';
     declarations: [
         LayoutComponent,
         HeaderComponent,
-        SidebarComponent
-    ]
+        SidebarComponent,
+        NotificationComponent
+    ],
+    providers: [DataService]
 })
 export class LayoutModule { }
