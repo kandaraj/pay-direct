@@ -1,12 +1,26 @@
  
   <fieldset class="form-group">
-      <label>Is it long term or short term.</label>
+      <h1>
+          How would you rate <br/> you situation?
+      </h1>
+
+<br/><br/>
+
+      <div style="width: 400px;">
+Lorem ipsum dolor sit amet, mel ullum petentium et, at sensibus voluptaria definiebas pro, veri perpetua his no. 
+      </div>
+<br/><br/>
+
       <label class="radio-inline">
-          <input type="radio" name="term" id="optionsRadiosInline" value="short" checked="" (click)="saveTerm($event)" />Short
+          <input type="radio" name="term" id="optionsRadiosInline" value="short" checked="" (click)="saveTerm($event)" />  &nbsp; Short
       </label>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
       <label class="radio-inline">
-          <input type="radio" name="term" id="optionsRadiosInline" value="long" (click)="saveTerm($event)"/>Long
+          <input type="radio" name="term" id="optionsRadiosInline" value="long" (click)="saveTerm($event)"/>  &nbsp; Long
       </label>
+
+<br/><br/>
+
 
       <a [routerLink]="['/calculator/location']" [routerLinkActive]="['router-link-active']" class="btn btn-primary btn-lg" role="button" >
             Next
