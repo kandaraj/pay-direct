@@ -4,3 +4,28 @@
 @import "utils";
 @import "rtl";
 @import "responsive";
+
+.bgimg {
+    background-image: url('../assets/images/agl-background.png');
+}
+
+p, div
+{
+   color: #fff !important;
+}
+
+input {
+    color: #000;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.center-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
