@@ -3,16 +3,31 @@
     width: 100%;
     background: #fff;
     &__item {
+        $block: &;
         height: 60px;
         border-bottom: 1px solid #ddd;
         padding: 10px 20px;
         padding: 0px 20px 0px 60px;
         font-size: 14px;
         box-sizing: border-box;
-        &-text {
-            &.active{
+        position: relative;
+        &.active {
+            #{$block}-text {
                 color: #001cb0 !important;
             }
+            #{$block}-progress {
+                // background: #001cb0;
+                &::before {
+                    background: #001cb0;
+                    z-index: 9;
+                }
+                &::after {
+                    background: #001cb0;
+                    height: 100%;
+                }
+            }
+        }
+        &-text {
             color: #a7a7a7 !important;
         }
         &.back {
@@ -22,8 +37,56 @@
             text-align: right;
             background: #f5f5f5;
         }
-        &:last-child{
+        &:last-child {
+            #{$block}-progress {
+                // height: 50%;
+                &::before {
+                    top: 100%;
+                }
+                // &::after {
+                //     height: 100%;
+                // }
+            }
             border-bottom: 0px;
+        }
+        &:nth-child(2) {
+            #{$block}-progress {
+                top: 50%;
+                height: 50%;
+                &::before {
+                    top: 0%;
+                }
+                // &::after {
+                //     height: 100%;
+                // }
+            }
+        }
+        &-progress {
+            position: absolute;
+            height: 100%;
+            background: #a7a7a7;
+            width: 2px;
+            left: 30px;
+            top: -50%;
+            &::before {
+                height: 10px;
+                width: 10px;
+                background: #a7a7a7;
+                content: '';
+                left: -4px;
+                border-radius: 10px;
+                position: absolute;
+                top: 100%;
+                transform: translate(0, -50%);
+            }
+            &::after {
+                background: #001cb0;
+                content: '';
+                height: 0%;
+                width: 100%;
+                position: absolute;
+                transition: all 1s;
+            }
         }
     }
 }
