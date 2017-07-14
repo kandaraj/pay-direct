@@ -81,9 +81,19 @@ export class NotificationComponent implements OnInit {
                         actionplan: false
                     };
                     break;
-                    default:  this.dataService.statusBar = {
+                    case '/calculator/actionplan': this.dataService.statusBar = {
                         welcome: true,
                         situation: true,
+                        location: true,
+                        income: true,
+                        expenses: true,
+                        concession: true,
+                        actionplan: true
+                    };
+                    break;
+                    default:  this.dataService.statusBar = {
+                        welcome: true,
+                        situation: false,
                         location: false,
                         income: false,
                         expenses: false,
