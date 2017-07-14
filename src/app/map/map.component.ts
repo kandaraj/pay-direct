@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
+  
+  show: boolean = true;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  showHide() {
+    if(this.show){
+      this.show = false;
+    }else{
+      this.show = true;
+    }
   }
 
 }

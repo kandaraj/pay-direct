@@ -1,5 +1,5 @@
 <div class="row" style="background-color:white; width:100%; height: 100%">
-  <div class="col-lg-3" style="padding:20px;">
+  <div class="col-lg-3" style="padding:20px;" >
     <img src="../assets/images/AGL_RGB_1837_primary.png" width="100" height="100" />
 
     <div>
@@ -22,8 +22,8 @@
   </div>
 
 
-  <div onclick="alert(1)" class="col-lg-9" style="color: black !important; background-size:cover; background-image: url(../assets/images/map.png)">
-    <div style="height:100%; width: 20%; background-color: white !important; color: black !important">
+  <div (click)="showHide()" class="col-lg-9" style="color: black !important; background-size:cover; background-image: url(../assets/images/map.png)">
+    <div style="height:100%; width: 20%; background-color: white !important; color: black !important" [hidden]="show">
       
       <img src="" />
 
