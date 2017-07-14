@@ -9,6 +9,16 @@ export class DataService {
         incometo: ''
     };
 
+    public statusBar: any = {
+        welcome: true,
+        situation: false,
+        location: false,
+        income: false,
+        expenses: false,
+        concession: false,
+        actionplan: false
+    };
+
     constructor(){}
 
 }

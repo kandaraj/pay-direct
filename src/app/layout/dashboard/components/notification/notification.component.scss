@@ -11,6 +11,9 @@
         font-size: 14px;
         box-sizing: border-box;
         position: relative;
+        a {
+            color: #001cb0 !important;
+        }
         &.active {
             #{$block}-text {
                 color: #001cb0 !important;
@@ -42,8 +45,7 @@
                 // height: 50%;
                 &::before {
                     top: 100%;
-                }
-                // &::after {
+                } // &::after {
                 //     height: 100%;
                 // }
             }
@@ -55,8 +57,7 @@
                 height: 50%;
                 &::before {
                     top: 0%;
-                }
-                // &::after {
+                } // &::after {
                 //     height: 100%;
                 // }
             }

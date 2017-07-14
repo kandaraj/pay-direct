@@ -1,30 +1,30 @@
 <div class="statusbar">
-    <div class="statusbar__item back"><div class="v-center">Back to agl.com</div></div>
-    <div class="statusbar__item active">
+    <div class="statusbar__item back"><div class="v-center"><a href="www.agl.com.au">Back to agl.com.au</a></div></div>
+    <div class="statusbar__item" [class.active]="this.dataService.statusBar.welcome">
         <div class="statusbar__item-progress"></div>
         <div class="statusbar__item-text v-center">Welcome to AGL on track</div>
     </div>
-    <div class="statusbar__item">
+    <div class="statusbar__item" [class.active]="dataService.statusBar.situation">
         <div class="statusbar__item-progress"></div>
         <div class="statusbar__item-text v-center">Your situation</div>
     </div>
-    <div class="statusbar__item">
+    <div class="statusbar__item" [class.active]="this.dataService.statusBar.location">
         <div class="statusbar__item-progress"></div>
         <div class="statusbar__item-text v-center">Household location</div>
     </div>
-    <div class="statusbar__item">
+    <div class="statusbar__item" [class.active]="this.dataService.statusBar.income">
         <div class="statusbar__item-progress"></div>
         <div class="statusbar__item-text v-center">Household Income</div>
     </div>
-    <div class="statusbar__item">
+    <div class="statusbar__item" [class.active]="this.dataService.statusBar.expense">
         <div class="statusbar__item-progress"></div>
         <div class="statusbar__item-text v-center">Household expenses</div>
     </div>
-    <div class="statusbar__item">
+    <div class="statusbar__item" [class.active]="this.dataService.statusBar.concession">
         <div class="statusbar__item-progress"></div>
         <div class="statusbar__item-text v-center">Concessions</div>
     </div>
-    <div class="statusbar__item">
+    <div class="statusbar__item" [class.active]="this.dataService.statusBar.actionplan">
         <div class="statusbar__item-progress"></div>
         <div class="statusbar__item-text v-center">Your action plans</div>
     </div>
