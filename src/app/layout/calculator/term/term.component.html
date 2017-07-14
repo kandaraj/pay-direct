@@ -1,28 +1,29 @@
 <div>
 
-      <h1>How would you rate <br/> you situation?</h1>
-      <br/><br/>
+    <h1>How would you rate <br/> you situation?</h1>
+    <br/><br/>
 
-      <div>
-            Lorem ipsum dolor sit amet, mel ullum petentium et, at sensibus voluptaria definiebas pro, veri perpetua his no. <br/>            <br/> Vix ea aeterno ponderum repudiandae, te has mediocrem ullamcorper. Munere cetero sapientem mei ad, ne sumo
-            lobortis quo, augue labores omnesque cu vim. Everti complectitur his ad. In diceret fuisset est. Ut usu lobortis
-            laboramus voluptaria. Vis eu liber debitis deterruisset.
+<md-slider min="1" max="5" step="0.5" value="1.5"></md-slider>
 
-      </div>
+    <div>
+        Lorem ipsum dolor sit amet, mel ullum petentium et, at sensibus voluptaria definiebas pro, veri perpetua his no. <br/>        <br/> Vix ea aeterno ponderum repudiandae, te has mediocrem ullamcorper. Munere cetero sapientem mei ad, ne sumo
+        lobortis quo, augue labores omnesque cu vim. Everti complectitur his ad. In diceret fuisset est. Ut usu lobortis
+        laboramus voluptaria. Vis eu liber debitis deterruisset.
 
-      <label class="radio-inline">
+    </div>
+
+    <label class="radio-inline">
           <input type="radio" name="term" id="optionsRadiosInline" value="short" checked="" (click)="saveTerm($event)" />  &nbsp; Short
       </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      <label class="radio-inline">
+    <label class="radio-inline">
           <input type="radio" name="term" id="optionsRadiosInline" value="long" (click)="saveTerm($event)"/>  &nbsp; Long
       </label>
 
 
-      <a [routerLink]="['/calculator/location']" [routerLinkActive]="['router-link-active']" class="btn btn-primary btn-lg btn-block"
-            role="button">
+    <a [routerLink]="['/calculator/location']" [routerLinkActive]="['router-link-active']" class="btn btn-primary btn-lg btn-block"
+        role="button">
             NEXT STEP
         </a>
-
-
+ 
 
 </div>
