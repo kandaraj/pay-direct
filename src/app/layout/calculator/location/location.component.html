@@ -1,24 +1,26 @@
- 
-      <h1>
-          Which suburb is your <br/> household in?
-      </h1>
 
-<br/><br/>
+<div>
+    <h1>Which suburb is your <br/> household in?</h1>
+    <br/><br/>
 
-      <div style="width: 400px;">
-Lorem ipsum dolor sit amet, mel ullum petentium et, at sensibus voluptaria definiebas pro.
-      </div>
-<br/><br/>
+    <div>
+        Lorem ipsum dolor sit amet, mel ullum petentium et, at sensibus voluptaria definiebas pro, veri perpetua his no. <br/>        <br/> Vix ea aeterno ponderum repudiandae, te has mediocrem ullamcorper. Munere cetero sapientem mei ad, ne sumo
+        lobortis quo, augue labores omnesque cu vim. Everti complectitur his ad. In diceret fuisset est. Ut usu lobortis
+        laboramus voluptaria. Vis eu liber debitis deterruisset.
+
+    </div>
+
+    <label class="radio-inline">
+          <input type="radio" name="term" id="optionsRadiosInline" value="short" checked="" (click)="saveTerm($event)" />  &nbsp; Short
+      </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <label class="radio-inline">
+          <input type="radio" name="term" id="optionsRadiosInline" value="long" (click)="saveTerm($event)"/>  &nbsp; Long
+      </label>
 
 
-  <input type="text" [(ngModel)]="postcode" required />
-
-<br/><br/>
-
-
-   <a [routerLink]="['/calculator/income']" [routerLinkActive]="['router-link-active']" class="btn btn-primary btn-lg btn-block" 
-        role="button" (click)="saveLocation()" >
+    <a [routerLink]="['/calculator/income']" [routerLinkActive]="['router-link-active']" class="btn btn-primary btn-lg btn-block"
+        role="button" (click)="saveLocation()">
         NEXT STEP
     </a>
-    
- 
+
+</div>

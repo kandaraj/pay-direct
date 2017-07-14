@@ -1,27 +1,27 @@
- 
-      <h1>
-          What's the total income for <br/> your household?
-      </h1>
 
-<br/><br/>
+<div>
+    <h1>What's the total income for <br/> your household?</h1>
+    <br/><br/>
 
-      <div style="width: 400px;">
-Lorem ipsum dolor sit amet, mel ullum petentium et, at sensibus voluptaria definiebas pro.
-      </div>
-<br/><br/>
+    <div>
+        Lorem ipsum dolor sit amet, mel ullum petentium et, at sensibus voluptaria definiebas pro, veri perpetua his no. <br/>        <br/> Vix ea aeterno ponderum repudiandae, te has mediocrem ullamcorper. Munere cetero sapientem mei ad, ne sumo
+        lobortis quo, augue labores omnesque cu vim. Everti complectitur his ad. In diceret fuisset est. Ut usu lobortis
+        laboramus voluptaria. Vis eu liber debitis deterruisset.
 
-  <span>Between $ &nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </div>
+
+    <span>Between $ &nbsp;&nbsp;&nbsp;&nbsp;</span>
   <input type="text" [(ngModel)]="incomefrom" required />
 
   <span>&nbsp;&nbsp; and $ &nbsp;&nbsp;&nbsp;&nbsp;</span>
   <input type="text" [(ngModel)]="incometo" required />
 
-<br/><br/>
 
-
-   <a [routerLink]="['/calculator/expense']" [routerLinkActive]="['router-link-active']" class="btn btn-primary btn-lg btn-block" 
+    <a [routerLink]="['/calculator/expense']" [routerLinkActive]="['router-link-active']" class="btn btn-primary btn-lg btn-block" 
         role="button" (click)="saveIncome()" >
         NEXT STEP
     </a>
+
+</div>
     
  

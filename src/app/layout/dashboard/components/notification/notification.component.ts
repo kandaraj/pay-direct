@@ -21,7 +21,7 @@ export class NotificationComponent implements OnInit {
             if (event instanceof NavigationEnd) {
                 console.log(event.urlAfterRedirects);
                 switch (event.urlAfterRedirects) {
-                    case 'home': this.dataService.statusBar = {
+                    case '/home': this.dataService.statusBar = {
                         welcome: true,
                         situation: false,
                         location: false,
@@ -70,6 +70,7 @@ export class NotificationComponent implements OnInit {
                         concession: false,
                         actionplan: false
                     };
+                    break;
                     case '/calculator/concession': this.dataService.statusBar = {
                         welcome: true,
                         situation: true,
@@ -79,6 +80,7 @@ export class NotificationComponent implements OnInit {
                         concession: true,
                         actionplan: false
                     };
+                    break;
                     default:  this.dataService.statusBar = {
                         welcome: true,
                         situation: true,
