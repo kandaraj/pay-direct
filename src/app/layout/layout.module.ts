@@ -12,6 +12,8 @@ import { DataService } from '../shared/services/data-service';
 import { 
     NotificationComponent
 } from './dashboard/components';
+import { MapComponent } from './map/map.component';
+import { GrantComponent } from './grant/grant.component';
 
 @NgModule({
     imports: [
@@ -24,7 +26,9 @@ import {
         LayoutComponent,
         HeaderComponent,
         SidebarComponent,
-        NotificationComponent
+        NotificationComponent,
+        MapComponent,
+        GrantComponent
     ],
     providers: [DataService]
 })

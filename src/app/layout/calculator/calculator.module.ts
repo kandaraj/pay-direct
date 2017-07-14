@@ -10,6 +10,7 @@ import { IncomeComponent } from './income/income.component';
 import { ExpenseComponent } from './expense/expense.component';
 import { ConcessionComponent } from './concession/concession.component';
 import {MdSliderModule} from '@angular/material';
+import { ActionplanComponent } from './actionplan/actionplan.component';
 
 @NgModule({
   imports: [
@@ -18,7 +19,7 @@ import {MdSliderModule} from '@angular/material';
     FormsModule,
     MdSliderModule
   ],
-  declarations: [CalculatorComponent, TermComponent, LocationComponent, IncomeComponent, ExpenseComponent, ConcessionComponent],
+  declarations: [CalculatorComponent, TermComponent, LocationComponent, IncomeComponent, ExpenseComponent, ConcessionComponent, ActionplanComponent],
   providers: [DataService]
 })
 export class CalculatorModule { }
