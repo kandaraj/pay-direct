@@ -9,6 +9,7 @@ import { DataService } from '../../../shared/services/data-service';
 
 export class TermComponent implements OnInit {
   private _dataService: DataService;
+  range : number;
 
   constructor(private dataService: DataService) { 
     this._dataService = dataService;
@@ -17,9 +18,14 @@ export class TermComponent implements OnInit {
   ngOnInit() {
   }
 
-  saveTerm(term){
-    
-    this._dataService.data['term'] = term.currentTarget.value;
+  saveTerm(){
+    var term : string;
+    term = "long";
+
+    if(this.range == 1){
+      term = "short"
+    }
+    this._dataService.data['term'] = term; 
     console.log(this._dataService);
   }
 
