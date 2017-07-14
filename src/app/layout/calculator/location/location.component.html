@@ -1,18 +1,9 @@
-
 <div>
-    <h1>Which suburb is your <br/> household in?</h1>
+    <h1>Which suburb is your household in?</h1>
     <br/><br/>
-
-    <div>
-        Lorem ipsum dolor sit amet, mel ullum petentium et, at sensibus voluptaria definiebas pro, veri perpetua his no. <br/>        <br/> Vix ea aeterno ponderum repudiandae, te has mediocrem ullamcorper. Munere cetero sapientem mei ad, ne sumo
-        lobortis quo, augue labores omnesque cu vim. Everti complectitur his ad. In diceret fuisset est. Ut usu lobortis
-        laboramus voluptaria. Vis eu liber debitis deterruisset.
-
+    <div class="row">
+        <input type="text" [(ngModel)]="postcode" required />
     </div>
-
-    <input type="text" [(ngModel)]="postcode" required />
-
-
     <a [routerLink]="['/calculator/income']" [routerLinkActive]="['router-link-active']" class="btn btn-primary btn-lg btn-block"
         role="button" (click)="saveLocation()">
         NEXT STEP
