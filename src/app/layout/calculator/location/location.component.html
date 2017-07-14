@@ -10,12 +10,7 @@
 
     </div>
 
-    <label class="radio-inline">
-          <input type="radio" name="term" id="optionsRadiosInline" value="short" checked="" (click)="saveTerm($event)" />  &nbsp; Short
-      </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-    <label class="radio-inline">
-          <input type="radio" name="term" id="optionsRadiosInline" value="long" (click)="saveTerm($event)"/>  &nbsp; Long
-      </label>
+    <input type="text" [(ngModel)]="postcode" required />
 
 
     <a [routerLink]="['/calculator/income']" [routerLinkActive]="['router-link-active']" class="btn btn-primary btn-lg btn-block"
