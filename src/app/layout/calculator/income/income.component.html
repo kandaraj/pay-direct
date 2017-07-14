@@ -1,27 +1,46 @@
-
 <div>
     <h1>What's the total income for <br/> your household?</h1>
     <br/><br/>
 
     <div>
         Lorem ipsum dolor sit amet, mel ullum petentium et, at sensibus voluptaria definiebas pro, veri perpetua his no. <br/>        <br/> Vix ea aeterno ponderum repudiandae, te has mediocrem ullamcorper. Munere cetero sapientem mei ad, ne sumo
-        lobortis quo, augue labores omnesque cu vim. Everti complectitur his ad. In diceret fuisset est. Ut usu lobortis
-        laboramus voluptaria. Vis eu liber debitis deterruisset.
+
 
     </div>
 
-    <span>Between $ &nbsp;&nbsp;&nbsp;&nbsp;</span>
-  <input type="text" [(ngModel)]="incomefrom" required />
+    <!-- <span>Between $ &nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <input type="text" [(ngModel)]="incomefrom" required />
 
-  <span>&nbsp;&nbsp; and $ &nbsp;&nbsp;&nbsp;&nbsp;</span>
-  <input type="text" [(ngModel)]="incometo" required />
+    <span>&nbsp;&nbsp; and $ &nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <input type="text" [(ngModel)]="incometo" required /> -->
 
 
-    <a [routerLink]="['/calculator/expense']" [routerLinkActive]="['router-link-active']" class="btn btn-primary btn-lg btn-block" 
-        role="button" (click)="saveIncome()" >
+    <div class="row">
+        <div class="col-9">Between</div>
+        <div class="col-9">$0</div>
+        <div class="col-3">$10000</div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <md-slider style="width:100%" min="0" max="10000" step="1" value="1" [(ngModel)]="incomefrom" thumb-label="thumblabel">
+
+            </md-slider>
+        </div>
+        <div class="col-9">and</div>
+        <div class="col-9">$0</div>
+        <div class="col-3">$10000</div>
+        <div class="col-12">
+            <md-slider invert="invert" md-invert style="width:100%" min="0" max="10000" step="1" value="1" [(ngModel)]="incomeTo" thumb-label="thumblabel">
+
+            </md-slider>
+        </div>
+
+    </div>
+    <a [routerLink]="['/calculator/expense']" [routerLinkActive]="['router-link-active']" class="btn btn-primary btn-lg btn-block"
+        role="button" (click)="saveIncome()">
         NEXT STEP
     </a>
 
 </div>
-    
- 

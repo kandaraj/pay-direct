@@ -10,6 +10,7 @@ export class IncomeComponent implements OnInit {
 
   incomefrom : number;
   incometo: number;
+  income:number;
 
   constructor(private dataService: DataService) { 
     this.incomefrom = dataService.data.incomefrom;

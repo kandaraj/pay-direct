@@ -19,14 +19,37 @@
           <input type="radio" name="period" value="yearly" (click)="savePeriod($event)"/>  &nbsp; Yearly
       </label>
 
-    <span>Between $ &nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <!-- <span>Between $ &nbsp;&nbsp;&nbsp;&nbsp;</span>
     <input type="text" [(ngModel)]="expensefrom" required />
 
     <span>&nbsp;&nbsp; and $ &nbsp;&nbsp;&nbsp;&nbsp;</span>
-    <input type="text" [(ngModel)]="expenseto" required />
+    <input type="text" [(ngModel)]="expenseto" required /> -->
+
+
+    <div class="row">
+        <div class="col-9">Between</div>
+        <div class="col-9">$0</div>
+        <div class="col-3">$10000</div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <md-slider style="width:100%" min="0" max="10000" step="1" value="1" [(ngModel)]="expensefrom" thumb-label="thumblabel">
+            </md-slider>
+        </div>
+        <div class="col-9">and</div>
+        <div class="col-9">$0</div>
+        <div class="col-3">$10000</div>
+        <div class="col-12">
+            <md-slider invert="invert" md-invert style="width:100%" min="0" max="10000" step="1" value="1" [(ngModel)]="expenseto" thumb-label="thumblabel">
+            </md-slider>
+        </div>
+
+    </div>
 
     <a [routerLink]="['/calculator/concession']" [routerLinkActive]="['router-link-active']" class="btn btn-primary btn-lg btn-block"
-    role="button" (click)="saveExpense()">
+        role="button" (click)="saveExpense()">
         NEXT STEP
     </a>
 
