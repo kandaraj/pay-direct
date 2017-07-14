@@ -6,6 +6,7 @@ import { LocationComponent } from './location/location.component';
 import { IncomeComponent } from './income/income.component';
 import { ExpenseComponent } from './expense/expense.component';
 import { ConcessionComponent } from './concession/concession.component';
+import { ActionplanComponent } from './actionplan/actionplan.component';
 
 const routes: Routes = [
     { 
@@ -28,6 +29,9 @@ const routes: Routes = [
         },
         { 
           path: 'concession', component: ConcessionComponent 
+        },
+        { 
+          path: 'actionplan', component: ActionplanComponent 
         }
       ]
     }

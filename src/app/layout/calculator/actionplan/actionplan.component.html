@@ -1,3 +1,40 @@
-<p>
-  actionplan works!
-</p>
+<div>
+    <h1>Your action plan</h1>
+    <br/><br/>
+
+    <div>
+        Don't stress,askJane is here to get you back on track. Follow your personal action plan below.
+    </div>
+    <div class="actionplan">
+        <div class="actionplan__item">
+            <span class="actionplan-number">1</span>
+            <div class="v-center">
+                <div class="actionplan__item-text">Contact your energy retailer for a plan review</div>
+                <a>Agl customers click here</a></div>
+        </div>
+        <div class="actionplan__item">
+            <span class="actionplan-number">2</span>
+            <div class="v-center">
+                <div class="actionplan__item-text">Explore grant options</div>
+                <a>Click here</a></div>
+        </div>
+        <div class="actionplan__item">
+            <span class="actionplan-number">3</span>
+            <div class="v-center">
+                <div class="actionplan__item-text">Apply for concession</div>
+                <a>Click here</a></div>
+        </div>
+        <div class="actionplan__item">
+            <span class="actionplan-number">4</span>
+            <div class="v-center">
+                <div class="actionplan__item-text">Receive independant financial review</div>
+                <a>Click here</a></div>
+        </div>
+    </div>
+
+    <a [routerLink]="['/calculator/actionplan']" [routerLinkActive]="['router-link-active']" class="btn btn-primary btn-lg btn-block"
+        role="button">
+    SHOW ME THE ACTION PLAN
+  </a>
+
+</div>
