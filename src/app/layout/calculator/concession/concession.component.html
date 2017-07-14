@@ -2,12 +2,6 @@
   <h1>Last thing, do you have any concessions available?</h1>
   <br/><br/>
 
-  <div>
-    Lorem ipsum dolor sit amet, mel ullum petentium et, at sensibus voluptaria definiebas pro, veri perpetua his no. <br/>    <br/> Vix ea aeterno ponderum repudiandae, te has mediocrem ullamcorper. Munere cetero sapientem mei ad, ne sumo lobortis
-    quo, augue labores.
-
-  </div>
-  <br/><br/>
   <label class="radio-inline">
           <input type="radio" name="term" id="optionsRadiosInline" value="yes" checked="" (click)="saveConcession($event)" />  &nbsp; Yes
       </label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -16,6 +10,16 @@
       </label>
 
   <br/><br/>
+
+  <select class="form-control">
+                        <option>Select Your Concession</option>
+                        <option>Pensioner Concession Card (PCC)</option>
+                        <option>Health Care Card (HCC)</option>
+                        <option>Department of Veterans Affairs Card (DVA)</option>
+                    </select>
+
+  <br/><br/>
+  
   <a [routerLink]="['/calculator']" [routerLinkActive]="['router-link-active']" class="btn btn-primary btn-lg btn-block" role="button">
     SHOW ME THE ACTION PLAN
   </a>
