@@ -8,6 +8,7 @@ import { LocationComponent } from './location/location.component';
 import { FormsModule } from '@angular/forms';
 import { IncomeComponent } from './income/income.component';
 import { ExpenseComponent } from './expense/expense.component';
+import { ConcessionComponent } from './concession/concession.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,7 @@ import { ExpenseComponent } from './expense/expense.component';
     CalculatorRoutingModule,
     FormsModule
   ],
-  declarations: [CalculatorComponent, TermComponent, LocationComponent, IncomeComponent, ExpenseComponent],
+  declarations: [CalculatorComponent, TermComponent, LocationComponent, IncomeComponent, ExpenseComponent, ConcessionComponent],
   providers: [DataService]
 })
 export class CalculatorModule { }
